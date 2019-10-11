@@ -1,0 +1,14 @@
+#默认开发环境
+spring:
+  profiles.active: dev
+  
+---
+#开发环境
+spring:
+  profiles: dev
+  datasource.url: jdbc:oracle:thin:@192.168.10.11:1521:orcl
+  datasource.username: zhzx
+  datasource.password: zhzx
+  datasource.driver-class-name: oracle.jdbc.driver.OracleDriver
+server:
+  port: 8080
